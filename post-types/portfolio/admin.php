@@ -20,4 +20,10 @@ function manage_portfolio_project_columns( $column_name, $id ) {
 }
 add_action('manage_portfolio_project_posts_custom_column', 'manage_portfolio_project_columns', 10, 2);
 
+function sortable_portfolio_project_columns( $columns ) {
+    $columns['id'] = 'ID';
+ 
+    return $columns;
+}
+add_filter( 'manage_edit-portfolio_project_sortable_columns', 'sortable_portfolio_project_columns' );
 ?>
