@@ -20,7 +20,7 @@
 function bf_cpt_menu() {
 	$admin = add_submenu_page( 'options-general.php', 'netFORK Custom Post Types', 'Post Types', 'manage_options', 'bf-cpt', 'bf_cpt_admin' );
 	add_action( 'admin_print_scripts-' . $admin, 'bf_cpt_scripts' );
-	// add_action( 'admin_print_styles-' . $admin, 'bf_cpt_styles' );
+	add_action( 'admin_print_styles-' . $admin, 'bf_cpt_styles' );
 }
 add_action( 'admin_menu', 'bf_cpt_menu' );
 
