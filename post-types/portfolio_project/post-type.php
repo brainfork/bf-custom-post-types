@@ -89,7 +89,7 @@ if ( ! function_exists( 'bf_cpt_portfolio_register_post_types' ) ) {
 					'search_items'       => __( 'Search Projects',            $text_domain ),
 					'not_found'          => __( 'No projects found',          $text_domain ),
 					'not_found_in_trash' => __( 'No projects found in trash', $text_domain ),
-					'all_items'          => __( 'Projects',                   $text_domain ),
+					'all_items'          => __( 'All Projects',               $text_domain ),
 				)
 			)
 		);
